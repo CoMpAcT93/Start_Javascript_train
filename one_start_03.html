@@ -16,6 +16,21 @@ The content of the webpage
         console.log("Расстояние " + x_1 + " миль. равно " + res_1 + " км");
 
 
+        //Вычислитель индекса массы тела
+        let heig_1 = prompt("Введите свой рост в дюймах: ");
+        let weig_1 = prompt("Введите свой вес в фунтах: ");
+
+        //преобразование:
+        let preo_heig = heig_1 * 2.54;
+        let preo_weig = weig_1 * 0.453592;
+
+        //результат вычисления
+        let result_1 = (preo_weig/((preo_heig/100))**2);
+        //185,188 фунты
+        //68,8976 дюймы
+        //вывод
+        console.log("Ваш индекс массы тела составляет: " + result_1);
+        
 
     </script>
 
