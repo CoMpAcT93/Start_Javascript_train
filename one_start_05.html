@@ -14,7 +14,7 @@ The content of the webpage
     console.log(typeof arr[1]);
     console.log(typeof arr[3]);
 
-    //перезапись жлементов массива
+    //перезапись элементов массива
     arr[0] = "Tesla";
     console.log(" ");
     console.log(arr[0]);
@@ -22,15 +22,57 @@ The content of the webpage
 
 
     //П.З 3.1
-    let mass_1 = ["Milk", "Bread", "Apples"];
-    console.log("Длина списка составляет: ", mass_1.length)
+    //let mass_1 = ["Milk", "Bread", "Apples"];
+    //console.log("Длина списка составляет: ", mass_1.length)
 
-    mass_1[1] = "Bananas";
-    console.log("Теперь наш список такой: ", mass_1);
-    console.log(mass_1);
+    //mass_1[1] = "Bananas";
+    //console.log("Теперь наш список такой: ", mass_1);
+    //console.log(mass_1);
+
+    //Добавление и замена элементов
+    //let favoriteFruits = ["grapefruit", "orange", "lemon"];
+    //favoriteFruits.push("tangerine");
+
+    //console.log(favoriteFruits);
+    //добавим новый элемент в определенное место массива
+
+    //let arrofShapes = ["circe", "triangle", "rectange", "pentagon"];
+    //arrofShapes.splice(2, 2, "square", "trapezoid");
+    //console.log(arrofShapes);
+
+    let arr_1 = [1,2,3];
+    let arr_2 = [4,5,6];
+    let arr_3 = arr_1.concat(arr_2);
+    console.log(arr_3);
+    let arr_4 = arr_3.concat(7,8,9);
+    console.log(" ");
+    console.log(arr_4);
 
 
+    //удаление элемента из массива
+    arr_4.pop();
+    console.log(' ');
+    console.log(arr_4);
 
+    arr_4.shift();
+    console.log(' ');
+    console.log(arr_4);
+
+    arr_4.splice(1,3);
+    console.log(" ");
+    console.log(arr_4);
+    
+    //Поиск элементов
+    let findV = arr_4.find(function(e) {return e === 6});
+    let findV2 = arr_4.find(e => e === 10);
+    console.log(' ');
+    console.log(findV, findV2);
+
+    //поиск индекса в массиве
+    let findIndex1 = arr_4.indexOf(6);
+    let findIndex2 = arr_4.indexOf(8);
+    console.log(" ");
+    console.log(findIndex1, findIndex2);
 
     </script>
 
