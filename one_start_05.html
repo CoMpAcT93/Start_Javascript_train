@@ -40,39 +40,79 @@ The content of the webpage
     //arrofShapes.splice(2, 2, "square", "trapezoid");
     //console.log(arrofShapes);
 
-    let arr_1 = [1,2,3];
-    let arr_2 = [4,5,6];
-    let arr_3 = arr_1.concat(arr_2);
-    console.log(arr_3);
-    let arr_4 = arr_3.concat(7,8,9);
-    console.log(" ");
-    console.log(arr_4);
+    //let arr_1 = [1,2,3];
+    //let arr_2 = [4,5,6];
+   // let arr_3 = arr_1.concat(arr_2);
+   // console.log(arr_3);
+    //let arr_4 = arr_3.concat(7,8,9);
+    //console.log(" ");
+    //console.log(arr_4);
 
 
     //удаление элемента из массива
-    arr_4.pop();
-    console.log(' ');
-    console.log(arr_4);
+    //arr_4.pop();
+    //console.log(' ');
+    //console.log(arr_4);
 
-    arr_4.shift();
-    console.log(' ');
-    console.log(arr_4);
+    //arr_4.shift();
+    //console.log(' ');
+    //console.log(arr_4);
 
-    arr_4.splice(1,3);
-    console.log(" ");
-    console.log(arr_4);
+    //arr_4.splice(1,3);
+    //console.log(" ");
+    //console.log(arr_4);
     
     //Поиск элементов
-    let findV = arr_4.find(function(e) {return e === 6});
-    let findV2 = arr_4.find(e => e === 10);
-    console.log(' ');
-    console.log(findV, findV2);
+    //let findV = arr_4.find(function(e) {return e === 6});
+    //let findV2 = arr_4.find(e => e === 10);
+    //console.log(' ');
+    //console.log(findV, findV2);
 
     //поиск индекса в массиве
-    let findIndex1 = arr_4.indexOf(6);
-    let findIndex2 = arr_4.indexOf(8);
+    //let findIndex1 = arr_4.indexOf(6);
+    //let findIndex2 = arr_4.indexOf(8);
+    //console.log(" ");
+    //console.log(findIndex1, findIndex2);
+
+    //сортировка массива
+    //let names = ["James", "Alicia", "Fatiha", "Maria", "Bert"];
+    //names.sort();
+    //console.log(names);
+    //let age = [18,72,33,56,40];
+   // age.sort();
+    //console.log(age);
+    //метод reverse();
+    //names.reverse();
+    //console.log(" ");
+    //console.log(names);
+    //Практическое занятие 3.2
+    let spis_oke = ["Milk", "Bread", "Apples"];
+    spis_oke.splice(1,1,"Bananas", "Eggs");
+    spis_oke.pop();
     console.log(" ");
-    console.log(findIndex1, findIndex2);
+    console.log(spis_oke);
+    console.log(" ");
+    spis_oke.sort();
+    let findInd = spis_oke.indexOf("Milk");
+    console.log("Индекс слова 'Milk' равен = ", findInd);
+    console.log(" ");
+    console.log(spis_oke);
+    console.log(" ");
+    spis_oke.splice(1,0,"Carrots", "Lettuce");
+    console.log(spis_oke);
+    console.log(" ");
+    let spis_oke_2 = ["Juice", "Pop"];
+    let full_spi = spis_oke.concat(spis_oke_2, spis_oke_2);
+    console.log(" ");
+    console.log(full_spi);
+    let find_last_Ind = full_spi.lastIndexOf("Pop");
+    console.log(" ");
+    console.log(find_last_Ind);
+    
+
+
+
+
 
     </script>
 
