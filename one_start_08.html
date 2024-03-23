@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <script type="text/javascript" src="ch1_alert.js"></script>
+<head>
+    <title>This goes in the tab of yuor browser</title>
+</head>
+<body>
+The content of the webpage
+<button> не сдавайся Гигачад </button>
+    <script>
+    //Управление массивом
+    const theList = ["Laurence", "Svekis", true, 35, null, undefined, {test: 'one', score: 55}, ['one', 'two']];
+
+    theList.pop();
+    theList.shift();
+    theList.splice(0,0,"FIRST");
+    theList.splice(2,2,"MIDDLE");
+    theList.splice(3,3,"hello world");
+    theList.push("LAST");
+
+
+    //console.log(theList);
+    //console.log(theList_Middle);
+    //Практическое задание Каталог продукции магазина
+    let mass_catalog = [{
+        Tv: {
+            kol_vo: "11",
+            cena: "18$",
+            kg: "256"
+        },
+        bath: {
+            kol_vo: "23",
+            cena: "5$",
+            kg: "1256"
+        },
+        microvawe:{
+            kol_vo: "2",
+            cena: "12$",
+            kg: "4"
+        }
+    },
+    {
+        pristav_ka: {
+            kol_vo: "111",
+            cena: "1238$",
+            kg: "253"
+        },
+        pillow: {
+            kol_vo: "2234",
+            cena: "223$",
+            kg: "1"
+        },
+        microphone:{
+            kol_vo: "66",
+            cena: "22$",
+            kg: "1"
+        }
+    },
+
+];
+let pianino = {pianino_no:{            
+            kol_vo: "123",
+            cena: "222$",
+            kg: "123"},
+
+};
+mass_catalog.push(pianino);
+
+console.log(mass_catalog[0].Tv.kol_vo);
+console.log(mass_catalog[1].pillow.cena);
+console.log(mass_catalog[2].pianino_no.kg);
+console.log(mass_catalog);
+
+/*
+const myArr_1 = [1,3,5,6,8,9,15];
+console.log(myArr_1.indexOf(0));
+console.log(myArr_1.indexOf(3));
+
+let mymass = [1,2,3,4,5,6,7,8];
+mymass[1] = 4;
+console.log(mymass);
+
+const mymass2 = [1,2,3,4,5,6,7,8];
+mymass2[1] = 444;
+console.log(mymass2);
+
+*/
+const mymas_s = [];
+mymas_s[10] = 'test';
+console.log(mymas_s);
+console.log(mymas_s[2]);
+
+
+var myARR_3 = ["3","2","3","5","7","8","9123","67","3"];
+myARR_3.sort();
+//myARR_3.lenght = 0;
+console.log(myARR_3[0]);
+
+console.log(myARR_3);
+console.log(typeof myARR_3[3]);
+console.log(typeof myARR_3[5]);
+console.log(typeof myARR_3[6]);
+console.log(typeof myARR_3[1]);
+
+    </script>
+
+</body>
+</html>
