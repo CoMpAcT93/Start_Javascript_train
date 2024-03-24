@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <script type="text/javascript" src="ch1_alert.js"></script>
+<head>
+    <title>This goes in the tab of yuor browser</title>
+</head>
+<body>
+The content of the webpage
+<button> не сдавайся Гигачад </button>
+    <script>
+    //Логические операторы if else switch
+    /*
+    let rain = true;
+    
+    if(rain){
+        console.log("** нужно взять зонт, когда я пойду на улицу **");
+
+    } else {
+        console.log("** я могу оставить зонт дома **");
+    }
+
+    //примеры
+    let age_n = prompt("Введите ваш возраст: ");
+
+    if(age_n < 18){
+        console.log("We're very sorry, but you can't get in under 18");
+
+    } else {
+        console.log("WELCOME!!!");
+    }
+    //Практическое занятие 4.1
+    let car_n = false;
+    console.log(car_n);
+    if(car_n){
+        console.log("Наша переменная истинна!");
+    }
+    if(!car_n){
+        console.log("Переменная не истинна");
+    }
+    
+    let age = prompt("Введите ваш возраст: ");
+    age = Number(age);
+    console.log(typeof age);
+    let cost = 0;
+    let message;
+    if(age < 3){
+        cost = 0;
+        message = "Access is free under three.";
+    } else if(age >= 3 && age < 12){
+        cost = 5;
+        message = "With the child discount,  the fee is 5 dollars";
+    } else if(age >= 12 && age < 65){
+        cost = 10;
+        message = "A regular ticket costs 10 dollars.";
+    } else{
+        cost = 7;
+        message = "A ticket is 7 dollars.";
+    }
+    console.log(message);
+    console.log("Your Total cost ", cost);
+
+
+    
+    let ag_ge = prompt("Ведите ваш возраст: ");
+    ag_ge = Number(ag_ge);
+    let mes_age;
+    if(ag_ge >= 21){
+        mes_age = "разрешить вход в заведние и покупку алкоголя!";
+    } else if(ag_ge >= 19){
+        mes_age = "разрешить вход в заведение и запретить покупку алкоголя!";
+    } else{
+        mes_age = "запретить вход!";
+    }
+    console.log(mes_age);
+    */
+    //Практическое занятие 4.4 шар судьбы
+    let ran_domnum = Math.floor(Math.random() * 10);
+    console.log(ran_domnum);
+    let pol_zov = prompt("Что вы хотите узнать? ");
+    switch(ran_domnum){
+        case 0:
+            console.log("Сила – не в бабках. Ведь бабки – уже старые.");
+            break;
+        case 1:
+            console.log("Взял нож - режь, взял дошик - ешь.");
+            break;
+        case 2:
+            console.log("Надо любить жизнь больше, чем смысл жизни.");
+            break;
+        case 3:
+            console.log("Я живу, как карта ляжет. Ты живёшь, как мамка скажет.");
+            break;
+        case 4:
+            console.log("Если заблудился в лесу, иди домой.");
+            break;
+        case 5:
+            console.log("Работа — это не волк. Работа — ворк. А волк — это ходить.");
+            break;
+        case 6:
+            console.log("Как говорил мой дед, «Я твой дед».");
+            break;
+        case 7:
+            console.log("Слово - не воробей. Вообще ничто не воробей, кроме самого воробья.");
+            break;
+        case 8:
+            console.log("Из проведённых 64-х боёв у меня 64 победы. Все бои были с тенью.");
+            break;
+        case 9:
+            console.log("Никогда не сдавайтесь, идите к своей цели! А если будет сложно – сдавайтесь.");
+            break;
+        default:
+            console.log("Интересненько?");
+            break;
+    }
+
+
+    </script>
+
+</body>
+</html>
