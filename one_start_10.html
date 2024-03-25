@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <script type="text/javascript" src="ch1_alert.js"></script>
+<head>
+    <title>This goes in the tab of yuor browser</title>
+</head>
+<body>
+The content of the webpage
+<button> не сдавайся Гигачад </button>
+    <script>
+    //Циклы
+    let i = 0;
+    while (i < 10){
+        console.log(i);
+        i++;
+    }
+
+    let someArr = ["Mike", "Storm", "Frodo", "Biloba", "MoneyWeather", "Hugrid"];
+    let notfound = true;
+
+    while(notfound && someArr.length > 0){
+        if(someArr[0] === "Biloba"){
+            console.log("Found his");
+            notfound = false;
+        }else{
+            //console.log(someArr);
+            someArr.shift();
+        }
+    }
+
+
+    </script>
+
+</body>
+</html>

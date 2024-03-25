@@ -72,7 +72,7 @@ The content of the webpage
         mes_age = "запретить вход!";
     }
     console.log(mes_age);
-    */
+    
     //Практическое занятие 4.4 шар судьбы
     let ran_domnum = Math.floor(Math.random() * 10);
     console.log(ran_domnum);
@@ -112,7 +112,71 @@ The content of the webpage
             console.log("Интересненько?");
             break;
     }
+    
+    //Практическое занятие
+    let pri_ze = prompt("Выберите число от 0 до 10: ");
+    pri_ze = Number(pri_ze);
 
+    let my_selection;
+
+    switch(pri_ze){
+        case 0:
+            my_selection = "утюг";
+            break;
+        case 1:
+            my_selection = "микроволновка";
+            break;
+        case 2:
+            my_selection = "телевизор";
+            break;
+        case 3: 
+            my_selection = "компьютер";
+            break;
+        case 4:
+            my_selection = "стол";
+            break;
+        case 5:
+        case 6:
+            my_selection = "клавиатура";
+            break;
+        case 7:
+            my_selection = "автомобиль";
+            break;
+        case 8:
+        case 9:
+            my_selection = "велосипед";
+            break;
+        case 10:
+            my_selection = "скейтборд";
+            break;
+        default:
+            my_selection = "вы ввели число вне диапазона!";
+            break;
+    }
+
+console.log("Ваше число:", pri_ze, "ваш выйгрыш:", my_selection);
+    */
+    let mytime = 9;
+    let output;
+
+    if(mytime >= 8 && mytime < 12){
+        output = "Wake up";
+    }else if(mytime >= 12 && mytime < 13){
+        output = "Go to lunch";
+    }
+    else if(mytime >= 13 && mytime <= 16){
+        output = "Go to work";
+    }
+    else if(mytime > 16 && mytime < 20){
+        output = "Dinner time";
+    }
+    else if(mytime >= 22){
+        output = "Time to go to sleep";
+    }else{
+        output = "You should be sleeping"
+    }
+    console.log(output);
+    
 
     </script>
 

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Игра в рулетку</title>
+</head>
+<body>
+<h1> Game of roulette </h1>
+<button> Играть в рулетку! </button>
+    <script>
+    //Попросите пользователя ввести число и проверьте, больше оно, равно или меньше динамического значения числа в вашем коде
+    let num_rand = Math.floor(Math.random()*10); //рандомное значение до 100 и сразу округлим
+    let polz_vvod = prompt("Ввдетие любое целое число в диапазоне от 0 до 10");
+    polz_vvod = Number(polz_vvod); //преобразовали в INT
+
+    if(num_rand > polz_vvod){
+        console.log("Слишком маленькое число!!!");
+        console.log("Ваше число: ", polz_vvod, " < ", num_rand);
+        //console.log("Сгенерированное число равно: ", num_rand);
+    } else if(num_rand < polz_vvod){
+        console.log("Слишком большое число!!!");
+        console.log("Ваше число: ", polz_vvod, " > ", num_rand);
+    } else {
+        console.log("Вот оно!!!");
+        console.log("Ваше число: ", polz_vvod, " = ", num_rand);
+    }
+
+    </script>
+
+</body>
+</html>
