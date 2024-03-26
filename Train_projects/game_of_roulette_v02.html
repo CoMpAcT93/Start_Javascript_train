@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Игра в рулетку</title>
+</head>
+<body>
+<h1> Game of roulette </h1>
+<button> Играть в рулетку! </button>
+    <script>
+  //Практическое занятие 5.1 угадывание числа!
+  let fin_al = 0;
+    let gen_num = Math.floor(Math.random()*10);
+    console.log(gen_num);
+
+    let pol_sled = false;
+
+    while(fin_al < 25){
+        num_pers = prompt("Введите число от 1 до 10: ");
+        num_pers = Number(num_pers);
+        if(num_pers === gen_num){
+            pol_sled = true;
+            console.log("Вы победили!!!")
+            break;
+        } else{
+            if(num_pers < gen_num){
+                console.log("Ваше число слишком маленькое! давай больше");
+            }else if(num_pers > gen_num){
+                console.log("Ваше число слишком больше!!! давай меньше")
+            }
+            fin_al++;
+            continue;
+        }
+            
+        }
+    if(pol_sled === false){
+        console.log("Ваши попытки к сожалению истрачены ");
+    }
+
+    </script>
+
+</body>
+</html>

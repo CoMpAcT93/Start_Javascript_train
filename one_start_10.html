@@ -9,6 +9,7 @@ The content of the webpage
 <button> не сдавайся Гигачад </button>
     <script>
     //Циклы
+    /*
     let i = 0;
     while (i < 10){
         console.log(i);
@@ -26,6 +27,48 @@ The content of the webpage
             //console.log(someArr);
             someArr.shift();
         }
+    }
+    //ряд Фибоначи
+    let nr_1 = 0;
+    let nr_2 = 1;
+    let temp;
+    fibonach = [];
+
+    while(fibonach.length < 25){
+        fibonach.push(nr_1);
+        temp = nr_1 + nr_2;
+        nr_1 = nr_2;
+        nr_2 = temp;
+    }
+    console.log(fibonach);
+    */
+    //Практическое занятие 5.1 угадывание числа!
+    let fin_al = 0;
+    let gen_num = Math.floor(Math.random()*10);
+    console.log(gen_num);
+
+    let pol_sled = false;
+
+    while(fin_al < 25){
+        num_pers = prompt("Введите число от 1 до 10: ");
+        num_pers = Number(num_pers);
+        if(num_pers === gen_num){
+            pol_sled = true;
+            console.log("Вы победили!!!")
+            break;
+        } else{
+            if(num_pers < gen_num){
+                console.log("Ваше число слишком маленькое! давай больше");
+            }else if(num_pers > gen_num){
+                console.log("Ваше число слишком больше!!! давай меньше")
+            }
+            fin_al++;
+            continue;
+        }
+            
+        }
+    if(pol_sled === false){
+        console.log("Ваши попытки к сожалению истрачены ");
     }
 
 
