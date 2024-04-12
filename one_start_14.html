@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <script type="text/javascript" src="ch1_alert.js"></script>
+<head>
+    <title>This goes in the tab of yuor browser</title>
+</head>
+<body>
+The content of the webpage
+<button> не сдавайся Гигачад </button>
+    <script>
+    // let car = {           //обьект car
+    //     model: "Gold",
+    //     make: "Volkswagen",
+    //     year: 1999,
+    //     color: "black",
+    // };
+
+    // for(let prop in car){           //цикл вызова каждого элемента обекта
+    //     console.log(car[prop]);
+    // }
+
+    // for(let prop in car){
+    //     console.log(prop);
+    // }
+
+
+    //Практическое занятие 5.7
+    // let velosiped = {
+    //     type: "Gorny",
+    //     model: "Sevok",
+    //     price: 25000,
+    //     year: 1993,
+    // }
+
+    // for(let vyvod in velosiped){
+    //     console.log(vyvod + ": " + velosiped[vyvod]);
+    // }
+
+    // let mass_vel = [{
+    //     type: "Gorny",
+    //     model: "Sevok",
+    //     price: 25000,
+    //     year: 1993,
+    // }]
+
+    // // for(let i = 0; i < mass_vel.length; i++){
+    // //     console.log(mass_vel[i]);
+    // // }
+
+    // for(let stepp in mass_vel){
+    //     console.log(mass_vel[stepp]);
+    // }
+
+    //Цикл из обьектов преобразованных в массивы
+    // let arrKeys = Object.keys(car);
+    // console.log(arrKeys);
+
+    // for(let key of Object.keys(car)){
+    //     console.log(key);
+    // }
+    //Операторы break и continue
+    let cars = [
+        {
+            model: "Golf",
+            make: "Volkswagen",
+            year: 1999,
+            color: "black",
+        },
+        {
+            model: "Picanto",
+            make: "Kia",
+            year: 2020,
+            color: "red",
+        },
+        {
+            model: "Peugeot",
+            make: "208",
+            year: 2021,
+            color: "black",
+        },
+        {
+            model: "Fiat",
+            make: "Punto",
+            year: 2020,
+            color: "black",
+        }
+    ]
+
+    for(let i = 0; i < cars.length; i++){
+        if(cars[i].year >= 2020){
+            if(cars[i].color === "black"){
+                console.log("I have found my new car: ", cars[i]);
+                break;
+            }
+        }
+    }
+
+
+
+    </script>
+
+</body>
+</html>
